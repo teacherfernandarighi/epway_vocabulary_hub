@@ -1,0 +1,54 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "EPWAY Student Profiles",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "streak": { "type": "number" },
+        "lastActiveDate": { "type": "string" },
+        "theme": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "words": {
+      "title": "Words",
+      "description": "Personal student vocabulary bank",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "word": { "type": "string" },
+        "pronunciation": { "type": "string" },
+        "audioUrl": { "type": "string" },
+        "meaning": { "type": "string" },
+        "translation": { "type": "string" },
+        "partOfSpeech": { "type": "string" },
+        "cefr": { "type": "string" },
+        "category": { "type": "string" },
+        "lesson": { "type": "string" },
+        "collocations": { "type": "array", "items": { "type": "string" } },
+        "wordFamily": { "type": "array", "items": { "type": "string" } },
+        "synonyms": { "type": "array", "items": { "type": "string" } },
+        "antonyms": { "type": "array", "items": { "type": "string" } },
+        "commonMistakes": { "type": "string" },
+        "whatComesBefore": { "type": "string" },
+        "whatComesAfter": { "type": "string" },
+        "exampleSentence": { "type": "string" },
+        "exampleTranslation": { "type": "string" },
+        "mySentence": { "type": "string" },
+        "teacherFeedback": { "type": "string" },
+        "reviewDate": { "type": "string" },
+        "difficulty": { "type": "string" },
+        "mastered": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "word", "meaning"]
+    }
+  }
+}

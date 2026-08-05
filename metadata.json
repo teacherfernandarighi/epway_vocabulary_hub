@@ -1,0 +1,6 @@
+{
+  "name": "EPWAY Vocabulary Hub",
+  "description": "Banco de vocabulário pessoal para alunos da EPWAY English School com suporte a IA Gemini, revisão espaçada e integração com Notion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
